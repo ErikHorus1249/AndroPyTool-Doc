@@ -1,0 +1,1575 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/erik/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/erik/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.01538106 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.providers.update.OperateService $r1;
+        android.os.IBinder $r2, $r5, $r7;
+        com.ninepvi.shield.TrustAppActivity $r3;
+        com.android.providers.sms.SMSService $r4;
+        com.android.providers.sms.SMSSendService $r6;
+        com.ninepvi.shield.MainActivity $r8;
+        com.android.providers.update.OperateReceiver $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.providers.update.OperateService;
+
+        specialinvoke $r1.<com.android.providers.update.OperateService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onCreate()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.providers.update.OperateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label09;
+
+        $r3 = new com.ninepvi.shield.TrustAppActivity;
+
+        specialinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void <init>()>();
+
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onStart()>();
+
+     label08:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onPause()>();
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label07;
+
+     label09:
+        if $i0 == 13 goto label13;
+
+        $r4 = new com.android.providers.sms.SMSService;
+
+        specialinvoke $r4.<com.android.providers.sms.SMSService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.providers.sms.SMSService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        if $i0 == 15 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.android.providers.sms.SMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 17 goto label13;
+
+        if $i0 == 18 goto label12;
+
+     label13:
+        if $i0 == 19 goto label17;
+
+        $r6 = new com.android.providers.sms.SMSSendService;
+
+        specialinvoke $r6.<com.android.providers.sms.SMSSendService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.providers.sms.SMSSendService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label14:
+        if $i0 == 20 goto label15;
+
+        if $i0 == 21 goto label14;
+
+     label15:
+        $r7 = virtualinvoke $r6.<com.android.providers.sms.SMSSendService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label16:
+        if $i0 == 23 goto label17;
+
+        if $i0 == 24 goto label16;
+
+     label17:
+        if $i0 == 25 goto label20;
+
+        $r8 = new com.ninepvi.shield.MainActivity;
+
+        specialinvoke $r8.<com.ninepvi.shield.MainActivity: void <init>()>();
+
+        if $i0 == 26 goto label20;
+
+        virtualinvoke $r8.<com.ninepvi.shield.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r8.<com.ninepvi.shield.MainActivity: void onStart()>();
+
+     label19:
+        virtualinvoke $r8.<com.ninepvi.shield.MainActivity: void onResume()>();
+
+        virtualinvoke $r8.<com.ninepvi.shield.MainActivity: void onPause()>();
+
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label20;
+
+        if $i0 == 30 goto label18;
+
+     label20:
+        if $i0 == 32 goto label22;
+
+        $r9 = new com.android.providers.update.OperateReceiver;
+
+        specialinvoke $r9.<com.android.providers.update.OperateReceiver: void <init>()>();
+
+        if $i0 == 33 goto label22;
+
+     label21:
+        virtualinvoke $r9.<com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label21;
+
+     label22:
+        if $i0 == 36 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.7 seconds.
+[Spark] Solution found in 1.7 seconds.
+Callback analysis done.
+Warning: TextView is a phantom class!
+Warning: com.ninepvi.shield.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/file_row.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.ninepvi.shield.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 2 layout controls in file res/layout/foot.xml
+Warning: ImageView is a phantom class!
+Warning: com.ninepvi.shield.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: com.ninepvi.shield.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 3 layout controls in file res/layout/list_content.xml
+Found 4 layout controls in file res/layout/list_content_main.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.ninepvi.shield.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.ninepvi.shield.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.ninepvi.shield.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 5 layout controls in file res/layout/main.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.providers.update.OperateService $r1;
+        android.os.IBinder $r2, $r5, $r8;
+        com.ninepvi.shield.TrustAppActivity $r3;
+        com.android.providers.sms.SMSService $r4;
+        com.android.providers.sms.SMSReceiver $r6;
+        com.android.providers.sms.SMSSendService $r7;
+        com.ninepvi.shield.MainActivity $r9;
+        ar $r10;
+        ag $r11;
+        as $r12;
+        v $r13;
+        t $r14;
+        an $r15;
+        bc $r16;
+        ah $r17;
+        al $r18;
+        ba $r19;
+        aq $r20;
+        az $r21;
+        boolean $z0, $z1;
+        ai $r22;
+        bd $r23;
+        ax $r24;
+        aj $r25;
+        com.android.providers.update.OperateReceiver $r26;
+        com.android.providers.handler.ApnHandler $r27;
+        com.android.providers.handler.ApnHandler$NetworkChangeReceiver $r28;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.providers.update.OperateService;
+
+        specialinvoke $r1.<com.android.providers.update.OperateService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onCreate()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.providers.update.OperateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label09;
+
+        $r3 = new com.ninepvi.shield.TrustAppActivity;
+
+        specialinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void <init>()>();
+
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onStart()>();
+
+     label08:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onPause()>();
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label09;
+
+        if $i0 == 12 goto label07;
+
+     label09:
+        if $i0 == 14 goto label13;
+
+        $r4 = new com.android.providers.sms.SMSService;
+
+        specialinvoke $r4.<com.android.providers.sms.SMSService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.providers.sms.SMSService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 15 goto label11;
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.android.providers.sms.SMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        if $i0 == 19 goto label12;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r6 = new com.android.providers.sms.SMSReceiver;
+
+        specialinvoke $r6.<com.android.providers.sms.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r6.<com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label19;
+
+        $r7 = new com.android.providers.sms.SMSSendService;
+
+        specialinvoke $r7.<com.android.providers.sms.SMSSendService: void <init>()>();
+
+        virtualinvoke $r7.<com.android.providers.sms.SMSSendService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        if $i0 == 26 goto label16;
+
+     label17:
+        $r8 = virtualinvoke $r7.<com.android.providers.sms.SMSSendService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        if $i0 == 30 goto label44;
+
+        $r9 = new com.ninepvi.shield.MainActivity;
+
+        specialinvoke $r9.<com.ninepvi.shield.MainActivity: void <init>()>();
+
+        if $i0 == 31 goto label44;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onStart()>();
+
+     label21:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onResume()>();
+
+        if $i0 == 33 goto label43;
+
+     label22:
+        $r10 = new ar;
+
+        specialinvoke $r10.<ar: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r10.<ar: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r11 = new ag;
+
+        specialinvoke $r11.<ag: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 35 goto label24;
+
+        virtualinvoke $r11.<ag: void onClick(android.view.View)>(null);
+
+     label24:
+        $r12 = new as;
+
+        specialinvoke $r12.<as: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 36 goto label25;
+
+        virtualinvoke $r12.<as: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r13 = new v;
+
+        specialinvoke $r13.<v: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 37 goto label26;
+
+        virtualinvoke $r13.<v: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r14 = new t;
+
+        specialinvoke $r14.<t: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r14.<t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r15 = new an;
+
+        specialinvoke $r15.<an: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 39 goto label28;
+
+        virtualinvoke $r15.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label28:
+        $r16 = new bc;
+
+        specialinvoke $r16.<bc: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 40 goto label29;
+
+        virtualinvoke $r16.<bc: void onClick(android.view.View)>(null);
+
+     label29:
+        $r17 = new ah;
+
+        specialinvoke $r17.<ah: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 41 goto label30;
+
+        virtualinvoke $r17.<ah: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label30:
+        $r18 = new al;
+
+        specialinvoke $r18.<al: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 42 goto label31;
+
+        virtualinvoke $r18.<al: void onClick(android.view.View)>(null);
+
+     label31:
+        $r19 = new ba;
+
+        specialinvoke $r19.<ba: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 43 goto label32;
+
+        virtualinvoke $r19.<ba: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label32:
+        $r20 = new aq;
+
+        specialinvoke $r20.<aq: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 44 goto label33;
+
+        virtualinvoke $r20.<aq: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label33:
+        $r21 = new az;
+
+        specialinvoke $r21.<az: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 45 goto label34;
+
+        virtualinvoke $r21.<az: void onClick(android.view.View)>(null);
+
+     label34:
+        if $i0 == 46 goto label35;
+
+        staticinvoke <com.ninepvi.shield.MainActivity: void <clinit>()>();
+
+     label35:
+        if $i0 == 47 goto label36;
+
+        $z0 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label36:
+        if $i0 == 48 goto label37;
+
+        $z1 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label37:
+        if $i0 == 49 goto label38;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label38:
+        $r22 = new ai;
+
+        specialinvoke $r22.<ai: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 50 goto label39;
+
+        virtualinvoke $r22.<ai: void onClick(android.view.View)>(null);
+
+     label39:
+        $r23 = new bd;
+
+        specialinvoke $r23.<bd: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 51 goto label40;
+
+        virtualinvoke $r23.<bd: void onClick(android.view.View)>(null);
+
+     label40:
+        $r24 = new ax;
+
+        specialinvoke $r24.<ax: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 52 goto label41;
+
+        virtualinvoke $r24.<ax: void onClick(android.view.View)>(null);
+
+     label41:
+        $r25 = new aj;
+
+        specialinvoke $r25.<aj: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 53 goto label42;
+
+        virtualinvoke $r25.<aj: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label42:
+        if $i0 == 54 goto label22;
+
+     label43:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onPause()>();
+
+        if $i0 == 55 goto label21;
+
+        if $i0 == 56 goto label44;
+
+        if $i0 == 57 goto label20;
+
+     label44:
+        if $i0 == 59 goto label46;
+
+        $r26 = new com.android.providers.update.OperateReceiver;
+
+        specialinvoke $r26.<com.android.providers.update.OperateReceiver: void <init>()>();
+
+        if $i0 == 60 goto label46;
+
+     label45:
+        virtualinvoke $r26.<com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 62 goto label45;
+
+     label46:
+        if $i0 == 63 goto label48;
+
+        $r27 = new com.android.providers.handler.ApnHandler;
+
+        specialinvoke $r27.<com.android.providers.handler.ApnHandler: void <init>(android.content.Context)>(null);
+
+        $r28 = new com.android.providers.handler.ApnHandler$NetworkChangeReceiver;
+
+        specialinvoke $r28.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void <init>(com.android.providers.handler.ApnHandler)>($r27);
+
+        if $i0 == 64 goto label48;
+
+     label47:
+        virtualinvoke $r28.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 66 goto label47;
+
+     label48:
+        if $i0 == 67 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.providers.update.OperateService $r1;
+        android.os.IBinder $r2, $r5, $r8;
+        com.ninepvi.shield.TrustAppActivity $r3;
+        com.android.providers.sms.SMSService $r4;
+        com.android.providers.sms.SMSReceiver $r6;
+        com.android.providers.sms.SMSSendService $r7;
+        com.ninepvi.shield.MainActivity $r9;
+        bc $r10;
+        ax $r11;
+        boolean $z0, $z1;
+        v $r12;
+        al $r13;
+        ar $r14;
+        bd $r15;
+        ba $r16;
+        az $r17;
+        ag $r18;
+        aq $r19;
+        t $r20;
+        ah $r21;
+        aj $r22, $r25;
+        w $r23;
+        as $r24;
+        ai $r26;
+        an $r27;
+        com.android.providers.update.OperateReceiver $r28;
+        com.android.providers.handler.ApnHandler $r29;
+        com.android.providers.handler.ApnHandler$NetworkChangeReceiver $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.providers.update.OperateService;
+
+        specialinvoke $r1.<com.android.providers.update.OperateService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onCreate()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.providers.update.OperateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label09;
+
+        $r3 = new com.ninepvi.shield.TrustAppActivity;
+
+        specialinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void <init>()>();
+
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onStart()>();
+
+     label08:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onPause()>();
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label09;
+
+        if $i0 == 12 goto label07;
+
+     label09:
+        if $i0 == 14 goto label13;
+
+        $r4 = new com.android.providers.sms.SMSService;
+
+        specialinvoke $r4.<com.android.providers.sms.SMSService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.providers.sms.SMSService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 15 goto label11;
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.android.providers.sms.SMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        if $i0 == 19 goto label12;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r6 = new com.android.providers.sms.SMSReceiver;
+
+        specialinvoke $r6.<com.android.providers.sms.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r6.<com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label19;
+
+        $r7 = new com.android.providers.sms.SMSSendService;
+
+        specialinvoke $r7.<com.android.providers.sms.SMSSendService: void <init>()>();
+
+        virtualinvoke $r7.<com.android.providers.sms.SMSSendService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        if $i0 == 26 goto label16;
+
+     label17:
+        $r8 = virtualinvoke $r7.<com.android.providers.sms.SMSSendService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        if $i0 == 30 goto label45;
+
+        $r9 = new com.ninepvi.shield.MainActivity;
+
+        specialinvoke $r9.<com.ninepvi.shield.MainActivity: void <init>()>();
+
+        if $i0 == 31 goto label45;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onStart()>();
+
+     label21:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onResume()>();
+
+        if $i0 == 33 goto label44;
+
+     label22:
+        $r10 = new bc;
+
+        specialinvoke $r10.<bc: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r10.<bc: void onClick(android.view.View)>(null);
+
+     label23:
+        $r11 = new ax;
+
+        specialinvoke $r11.<ax: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 35 goto label24;
+
+        virtualinvoke $r11.<ax: void onClick(android.view.View)>(null);
+
+     label24:
+        if $i0 == 36 goto label25;
+
+        $z0 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label25:
+        if $i0 == 37 goto label26;
+
+        $z1 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label27:
+        if $i0 == 39 goto label28;
+
+        staticinvoke <com.ninepvi.shield.MainActivity: void <clinit>()>();
+
+     label28:
+        $r12 = new v;
+
+        specialinvoke $r12.<v: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 40 goto label29;
+
+        virtualinvoke $r12.<v: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        $r13 = new al;
+
+        specialinvoke $r13.<al: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 41 goto label30;
+
+        virtualinvoke $r13.<al: void onClick(android.view.View)>(null);
+
+     label30:
+        $r14 = new ar;
+
+        specialinvoke $r14.<ar: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 42 goto label31;
+
+        virtualinvoke $r14.<ar: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label31:
+        $r15 = new bd;
+
+        specialinvoke $r15.<bd: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 43 goto label32;
+
+        virtualinvoke $r15.<bd: void onClick(android.view.View)>(null);
+
+     label32:
+        $r16 = new ba;
+
+        specialinvoke $r16.<ba: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 44 goto label33;
+
+        virtualinvoke $r16.<ba: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label33:
+        $r17 = new az;
+
+        specialinvoke $r17.<az: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 45 goto label34;
+
+        virtualinvoke $r17.<az: void onClick(android.view.View)>(null);
+
+     label34:
+        $r18 = new ag;
+
+        specialinvoke $r18.<ag: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 46 goto label35;
+
+        virtualinvoke $r18.<ag: void onClick(android.view.View)>(null);
+
+     label35:
+        $r19 = new aq;
+
+        specialinvoke $r19.<aq: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 47 goto label36;
+
+        virtualinvoke $r19.<aq: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        $r20 = new t;
+
+        specialinvoke $r20.<t: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 48 goto label37;
+
+        virtualinvoke $r20.<t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label37:
+        $r21 = new ah;
+
+        specialinvoke $r21.<ah: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 49 goto label38;
+
+        virtualinvoke $r21.<ah: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label38:
+        $r22 = new aj;
+
+        specialinvoke $r22.<aj: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        $r23 = new w;
+
+        specialinvoke $r23.<w: void <init>(aj)>($r22);
+
+        if $i0 == 50 goto label39;
+
+        virtualinvoke $r23.<w: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label39:
+        $r24 = new as;
+
+        specialinvoke $r24.<as: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 51 goto label40;
+
+        virtualinvoke $r24.<as: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        $r25 = new aj;
+
+        specialinvoke $r25.<aj: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 52 goto label41;
+
+        virtualinvoke $r25.<aj: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label41:
+        $r26 = new ai;
+
+        specialinvoke $r26.<ai: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 53 goto label42;
+
+        virtualinvoke $r26.<ai: void onClick(android.view.View)>(null);
+
+     label42:
+        $r27 = new an;
+
+        specialinvoke $r27.<an: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 54 goto label43;
+
+        virtualinvoke $r27.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label43:
+        if $i0 == 55 goto label22;
+
+     label44:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onPause()>();
+
+        if $i0 == 56 goto label21;
+
+        if $i0 == 57 goto label45;
+
+        if $i0 == 58 goto label20;
+
+     label45:
+        if $i0 == 60 goto label47;
+
+        $r28 = new com.android.providers.update.OperateReceiver;
+
+        specialinvoke $r28.<com.android.providers.update.OperateReceiver: void <init>()>();
+
+        if $i0 == 61 goto label47;
+
+     label46:
+        virtualinvoke $r28.<com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 63 goto label46;
+
+     label47:
+        if $i0 == 64 goto label49;
+
+        $r29 = new com.android.providers.handler.ApnHandler;
+
+        specialinvoke $r29.<com.android.providers.handler.ApnHandler: void <init>(android.content.Context)>(null);
+
+        $r30 = new com.android.providers.handler.ApnHandler$NetworkChangeReceiver;
+
+        specialinvoke $r30.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void <init>(com.android.providers.handler.ApnHandler)>($r29);
+
+        if $i0 == 65 goto label49;
+
+     label48:
+        virtualinvoke $r30.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 67 goto label48;
+
+     label49:
+        if $i0 == 68 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 37 callback methods for 6 components
+Found {res/layout/foot.xml=[2131034113 - android.widget.LinearLayout, 2131034114 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131034115 - android.widget.LinearLayout, 2131034116 - android.widget.LinearLayout, 2131034117 - android.widget.LinearLayout], res/layout/list_content_main.xml=[2131034119 - android.widget.TextView, 2131034120 - android.widget.TextView, 2131034118 - android.widget.ImageView, -1 - android.widget.LinearLayout], res/layout/file_row.xml=[2131034112 - android.widget.TextView], res/layout/main.xml=[-1 - android.widget.RelativeLayout, 2131034123 - android.widget.LinearLayout, 2131034124 - android.widget.Button, 2131034122 - android.widget.LinearLayout, 2131034125 - android.widget.ListView], res/layout/list_content.xml=[2131034121 - android.widget.CheckBox, 2131034119 - android.widget.TextView, 2131034120 - android.widget.TextView, 2131034118 - android.widget.ImageView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 37 callback methods.
+Running data flow analysis...
+Running data flow analysis on /home/erik/Documents/lab/samples/MW/05af60ce8a8c3cd31682982122423ef3.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.providers.update.OperateService $r1;
+        android.os.IBinder $r2, $r5, $r8;
+        com.ninepvi.shield.TrustAppActivity $r3;
+        com.android.providers.sms.SMSService $r4;
+        com.android.providers.sms.SMSReceiver $r6;
+        com.android.providers.sms.SMSSendService $r7;
+        com.ninepvi.shield.MainActivity $r9;
+        bd $r10;
+        al $r11;
+        v $r12;
+        an $r13;
+        ar $r14;
+        bc $r15;
+        ba $r16;
+        az $r17;
+        aj $r18, $r26;
+        w $r19;
+        boolean $z0, $z1;
+        ah $r20;
+        ai $r21;
+        as $r22;
+        ag $r23;
+        t $r24;
+        aq $r25;
+        ax $r27;
+        com.android.providers.update.OperateReceiver $r28;
+        com.android.providers.handler.ApnHandler $r29;
+        com.android.providers.handler.ApnHandler$NetworkChangeReceiver $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.providers.update.OperateService;
+
+        specialinvoke $r1.<com.android.providers.update.OperateService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onCreate()>();
+
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.providers.update.OperateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.providers.update.OperateService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label09;
+
+        $r3 = new com.ninepvi.shield.TrustAppActivity;
+
+        specialinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void <init>()>();
+
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onStart()>();
+
+     label08:
+        virtualinvoke $r3.<com.ninepvi.shield.TrustAppActivity: void onPause()>();
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label09;
+
+        if $i0 == 12 goto label07;
+
+     label09:
+        if $i0 == 14 goto label13;
+
+        $r4 = new com.android.providers.sms.SMSService;
+
+        specialinvoke $r4.<com.android.providers.sms.SMSService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.providers.sms.SMSService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 15 goto label11;
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.android.providers.sms.SMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        if $i0 == 19 goto label12;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r6 = new com.android.providers.sms.SMSReceiver;
+
+        specialinvoke $r6.<com.android.providers.sms.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r6.<com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label19;
+
+        $r7 = new com.android.providers.sms.SMSSendService;
+
+        specialinvoke $r7.<com.android.providers.sms.SMSSendService: void <init>()>();
+
+        virtualinvoke $r7.<com.android.providers.sms.SMSSendService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        if $i0 == 26 goto label16;
+
+     label17:
+        $r8 = virtualinvoke $r7.<com.android.providers.sms.SMSSendService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        if $i0 == 30 goto label45;
+
+        $r9 = new com.ninepvi.shield.MainActivity;
+
+        specialinvoke $r9.<com.ninepvi.shield.MainActivity: void <init>()>();
+
+        if $i0 == 31 goto label45;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onStart()>();
+
+     label21:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onResume()>();
+
+        if $i0 == 33 goto label44;
+
+     label22:
+        $r10 = new bd;
+
+        specialinvoke $r10.<bd: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r10.<bd: void onClick(android.view.View)>(null);
+
+     label23:
+        $r11 = new al;
+
+        specialinvoke $r11.<al: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 35 goto label24;
+
+        virtualinvoke $r11.<al: void onClick(android.view.View)>(null);
+
+     label24:
+        $r12 = new v;
+
+        specialinvoke $r12.<v: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 36 goto label25;
+
+        virtualinvoke $r12.<v: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r13 = new an;
+
+        specialinvoke $r13.<an: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 37 goto label26;
+
+        virtualinvoke $r13.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label26:
+        $r14 = new ar;
+
+        specialinvoke $r14.<ar: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r14.<ar: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r15 = new bc;
+
+        specialinvoke $r15.<bc: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 39 goto label28;
+
+        virtualinvoke $r15.<bc: void onClick(android.view.View)>(null);
+
+     label28:
+        $r16 = new ba;
+
+        specialinvoke $r16.<ba: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 40 goto label29;
+
+        virtualinvoke $r16.<ba: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label29:
+        $r17 = new az;
+
+        specialinvoke $r17.<az: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 41 goto label30;
+
+        virtualinvoke $r17.<az: void onClick(android.view.View)>(null);
+
+     label30:
+        $r18 = new aj;
+
+        specialinvoke $r18.<aj: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        $r19 = new w;
+
+        specialinvoke $r19.<w: void <init>(aj)>($r18);
+
+        if $i0 == 42 goto label31;
+
+        virtualinvoke $r19.<w: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label31:
+        if $i0 == 43 goto label32;
+
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label32:
+        if $i0 == 44 goto label33;
+
+        $z0 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label33:
+        if $i0 == 45 goto label34;
+
+        staticinvoke <com.ninepvi.shield.MainActivity: void <clinit>()>();
+
+     label34:
+        if $i0 == 46 goto label35;
+
+        $z1 = virtualinvoke $r9.<com.ninepvi.shield.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label35:
+        $r20 = new ah;
+
+        specialinvoke $r20.<ah: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 47 goto label36;
+
+        virtualinvoke $r20.<ah: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label36:
+        $r21 = new ai;
+
+        specialinvoke $r21.<ai: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 48 goto label37;
+
+        virtualinvoke $r21.<ai: void onClick(android.view.View)>(null);
+
+     label37:
+        $r22 = new as;
+
+        specialinvoke $r22.<as: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 49 goto label38;
+
+        virtualinvoke $r22.<as: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        $r23 = new ag;
+
+        specialinvoke $r23.<ag: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 50 goto label39;
+
+        virtualinvoke $r23.<ag: void onClick(android.view.View)>(null);
+
+     label39:
+        $r24 = new t;
+
+        specialinvoke $r24.<t: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 51 goto label40;
+
+        virtualinvoke $r24.<t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        $r25 = new aq;
+
+        specialinvoke $r25.<aq: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 52 goto label41;
+
+        virtualinvoke $r25.<aq: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label41:
+        $r26 = new aj;
+
+        specialinvoke $r26.<aj: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 53 goto label42;
+
+        virtualinvoke $r26.<aj: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label42:
+        $r27 = new ax;
+
+        specialinvoke $r27.<ax: void <init>(com.ninepvi.shield.MainActivity)>($r9);
+
+        if $i0 == 54 goto label43;
+
+        virtualinvoke $r27.<ax: void onClick(android.view.View)>(null);
+
+     label43:
+        if $i0 == 55 goto label22;
+
+     label44:
+        virtualinvoke $r9.<com.ninepvi.shield.MainActivity: void onPause()>();
+
+        if $i0 == 56 goto label21;
+
+        if $i0 == 57 goto label45;
+
+        if $i0 == 58 goto label20;
+
+     label45:
+        if $i0 == 60 goto label47;
+
+        $r28 = new com.android.providers.update.OperateReceiver;
+
+        specialinvoke $r28.<com.android.providers.update.OperateReceiver: void <init>()>();
+
+        if $i0 == 61 goto label47;
+
+     label46:
+        virtualinvoke $r28.<com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 63 goto label46;
+
+     label47:
+        if $i0 == 64 goto label49;
+
+        $r29 = new com.android.providers.handler.ApnHandler;
+
+        specialinvoke $r29.<com.android.providers.handler.ApnHandler: void <init>(android.content.Context)>(null);
+
+        $r30 = new com.android.providers.handler.ApnHandler$NetworkChangeReceiver;
+
+        specialinvoke $r30.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void <init>(com.android.providers.handler.ApnHandler)>($r29);
+
+        if $i0 == 65 goto label49;
+
+     label48:
+        virtualinvoke $r30.<com.android.providers.handler.ApnHandler$NetworkChangeReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 67 goto label48;
+
+     label49:
+        if $i0 == 68 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.300969343 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.114845444 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2261 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 91 sources and 22 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 38249
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 79000
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 274231 forward and 78013 backward edges solved, processing 16 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 16 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.014773661 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1) in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r7, $r4, null, "date DESC") in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1) in method <p: au a(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <a: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.android.providers.sms.SMSService: boolean a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r3, $r6, null, null) in method <com.android.providers.handler.ApnHandler: int a(android.content.ContentResolver,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.android.providers.handler.ApnHandler: int a(android.content.ContentResolver,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r30.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r31, "_id=?", $r26) in method <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1) in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r1) in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.android.providers.sms.SMSService: boolean a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0) in method <a: void a(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r1) in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.android.providers.sms.SMSService: boolean a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.providers.update.OperateService: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r1) in method <d: void d(byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r8 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r7, $r4, null, "date DESC"), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1), from the following sources:
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+Found a flow to sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.android.providers.sms.SMSService: boolean a()>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r3, $r6, null, null), from the following sources:
+	- $r1 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.android.providers.handler.ApnHandler: int a(android.content.ContentResolver,java.lang.String)>)
+Found a flow to sink virtualinvoke $r30.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r31, "_id=?", $r26), from the following sources:
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>)
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <af: java.lang.String a(android.content.Context,au,int,java.lang.String)>)
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.android.providers.sms.SMSService: boolean a()>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.android.providers.sms.SMSService: boolean a()>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.providers.sms.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.providers.update.OperateService: java.lang.String a()>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r1), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <af: void a(android.content.Intent,com.android.providers.update.OperateReceiver,android.content.Context)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r7 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <d: void a(java.lang.String,java.lang.String,java.lang.String,int)>)
+	- $r0 := @parameter0: android.content.Context (in <com.android.providers.update.OperateReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 337.29192 MB
+Analysis has run for 16.934073635 seconds

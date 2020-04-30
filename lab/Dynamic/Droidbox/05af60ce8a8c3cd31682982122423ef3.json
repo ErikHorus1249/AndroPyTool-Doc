@@ -1,0 +1,180 @@
+{
+    "accessedfiles": {
+        "1255126451": "/proc/258/net/xt_qtaguid/iface_stat_all",
+        "1308679892": "/proc/258/net/xt_qtaguid/iface_stat_all",
+        "139884750": "/dev/input/event0",
+        "193515188": "/proc/1313/cmdline",
+        "2085716340": "/data/data/com.android.providers.contacts/shared_prefs/com.android.providers.contacts_preferences.xml",
+        "305508137": "/dev/input/event0",
+        "325340350": "/dev/input/event0",
+        "39170347": "/proc/1149/cmdline",
+        "449195589": "/proc/1195/cmdline",
+        "62922988": "/dev/input/event0",
+        "857795907": "/dev/input/event0",
+        "940510355": "/data/data/com.android.music/shared_prefs/Music.xml"
+    },
+    "apkName": "/home/erik/Documents/lab/samples//MW/05af60ce8a8c3cd31682982122423ef3.apk",
+    "closenet": {},
+    "cryptousage": {},
+    "dataleaks": {},
+    "dexclass": {
+        "1.2053649425506592": {
+            "path": "/data/app/com.ninepvi.shield-1.apk",
+            "type": "dexload"
+        },
+        "54.095646142959595": {
+            "path": "/system/app/Music.apk",
+            "type": "dexload"
+        }
+    },
+    "enfperm": [],
+    "fdaccess": {
+        "0.5349400043487549": {
+            "data": "efbfbd060000efbfbdefbfbd0c000500000000000000",
+            "id": "305508137",
+            "operation": "write",
+            "path": "/dev/input/event0",
+            "type": "file write"
+        },
+        "4.872970104217529": {
+            "data": "636f6d2e6e696e657076692e736869656c64000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006d6f6e6b65792e7478740000000033636433313638323938",
+            "id": "39170347",
+            "operation": "read",
+            "path": "/proc/1149/cmdline",
+            "type": "file read"
+        },
+        "11.294475078582764": {
+            "data": "6574683020312030203020302030203230333037342039323720313430303736203833380a6c6f20312030203020302030203235323420333920323532342033390a00000000000000000000000000000000000000000000000000000000000000000000",
+            "id": "1308679892",
+            "operation": "read",
+            "path": "/proc/258/net/xt_qtaguid/iface_stat_all",
+            "type": "file read"
+        },
+        "11.298990964889526": {
+            "data": "33390a342033390a33390a342033390a390a390a390a390a390a33390a2033390a3532342033390a2033390a3532342033390a390a390a390a390a390a342033390a00000000000000000000000000000000000000000000000000000000000000000000",
+            "id": "1255126451",
+            "operation": "read",
+            "path": "/proc/258/net/xt_qtaguid/iface_stat_all",
+            "type": "file read"
+        },
+        "21.789448976516724": {
+            "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d226c6f63616c65223e656e5f55533c2f737472696e673e0a",
+            "id": "2085716340",
+            "operation": "write",
+            "path": "/data/data/com.android.providers.contacts/shared_prefs/com.android.providers.contacts_preferences.xml",
+            "type": "file write"
+        },
+        "28.670685052871704": {
+            "data": "7f060000efbfbd3901000500000001000000",
+            "id": "62922988",
+            "operation": "write",
+            "path": "/dev/input/event0",
+            "type": "file write"
+        },
+        "56.254069089889526": {
+            "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d227175657565223e3c2f737472696e673e0a3c696e74206e",
+            "id": "940510355",
+            "operation": "write",
+            "path": "/data/data/com.android.music/shared_prefs/Music.xml",
+            "type": "file write"
+        },
+        "59.99662804603577": {
+            "data": "636f6d2e616e64726f69642e6d7573696300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006d6f6e6b65792e7478740000000033636433313638323938",
+            "id": "449195589",
+            "operation": "read",
+            "path": "/proc/1195/cmdline",
+            "type": "file read"
+        },
+        "90.2800121307373": {
+            "data": "efbfbd060000efbfbdefbfbd0c000500000000000000",
+            "id": "139884750",
+            "operation": "write",
+            "path": "/dev/input/event0",
+            "type": "file write"
+        },
+        "142.048485994339": {
+            "data": "7f060000efbfbd3901000500000001000000",
+            "id": "325340350",
+            "operation": "write",
+            "path": "/dev/input/event0",
+            "type": "file write"
+        },
+        "208.49972701072693": {
+            "data": "efbfbd060000efbfbdefbfbd0c000500000000000000",
+            "id": "857795907",
+            "operation": "write",
+            "path": "/dev/input/event0",
+            "type": "file write"
+        },
+        "217.0258870124817": {
+            "data": "636f6d2e616e64726f69642e6d7573696300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006d6f6e6b65792e7478740000000033636433313638323938",
+            "id": "193515188",
+            "operation": "read",
+            "path": "/proc/1313/cmdline",
+            "type": "file read"
+        }
+    },
+    "hashes": [
+        "05af60ce8a8c3cd31682982122423ef3",
+        "400acf4279ada32b148a7371b14672e8bbdac39e",
+        "169424299791be6556db3450490517a5d791799c55365bf04019ca42ba738835"
+    ],
+    "opennet": {},
+    "phonecalls": {},
+    "recvnet": {},
+    "recvsaction": {
+        "com.android.providers.update.OperateReceiver": "android.intent.action.PHONE_STATE"
+    },
+    "sendnet": {},
+    "sendsms": {},
+    "servicestart": {
+        "54.80113506317139": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "54.80747103691101": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "69.89059400558472": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "69.95139598846436": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "85.58780097961426": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "85.6097240447998": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "88.93107295036316": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "88.96146392822266": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "135.00335597991943": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "135.01407194137573": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "214.19210004806519": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        },
+        "214.19841504096985": {
+            "name": "com.android.music.MediaPlaybackService",
+            "type": "service"
+        }
+    }
+}
