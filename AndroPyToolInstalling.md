@@ -230,7 +230,8 @@ Như vậy là xong phần Droidbox.
 
 ![](https://i.imgur.com/E0xwiLo.png)
 - **Bước 2** : Chuẩn bị file APK để phân tích  
-Dataset được cung cấp bởi đại học **[New Brunwick](https://www.unb.ca/)** ( Canada )
+
+ Dataset được cung cấp bởi đại học **[New Brunwick](https://www.unb.ca/)** ( Canada )
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXv4FyTpM7wWgoculZZNce5zRm3pAk8qcAG8sRxtfdrTHtCsdx&usqp=CAU"/>
 
