@@ -1,4 +1,5 @@
 
+
 By **[Erik Horus](https://github.com/ErikHorus1249)**
 Date : 30/04/2020 
 
@@ -159,9 +160,9 @@ Các bước sau đây dùng để cài đặt SDK Android ở chế độ khôn
 
 Như vậy là xong phần Droidbox.
 
-**3. Chuẩn bị Androidbox**
+**3. Chuẩn bị Droidbox**
 
--   Chúng ta sẽ cấp quyền cần thiết cho scripts
+-   Chúng ta sẽ cấp quyền cần thiết cho scripts bằng lệnh **[chmod](h)** 
     
 >  `$ chmod 744 AndroPyTool/DroidBox_AndroPyTool/*.sh`
 
@@ -176,10 +177,8 @@ Như vậy là xong phần Droidbox.
     
 >  `$ sudo pip install virtualenv`
 
-    
-    Tạo môi trường ảo và kích hoạt nó :
-    
-
+- Tạo môi trường ảo và kích hoạt :
+   
 >    `$ virtualenv droidbox_env`
 >     
 >    `$ source droidbox_env/bin/activate`
@@ -239,39 +238,39 @@ CIC2019 Dataset
 https://www.unb.ca/cic/datasets/invesandmal2019.html
 http://205.174.165.80/CICDataset/CICInvesAndMal2019/Dataset/APKs/
 
-Nếu bạn thấy Dataset trên chưa thỏa màn nhu cầu phân tích của bạn thì có thể tham khảo Dataset của anh Ấn Độ này 
+Nếu bạn thấy Dataset trên chưa thỏa màn nhu cầu phân tích của bạn thì có thể tham khảo Dataset của anh Ấn Độ này.
 
 ![](https://i.imgur.com/2nUnnmG.png)
 
 **[Github/ashishb](https://github.com/ashishb/android-malware)**
 - **Bước 3 : Phân tích**
 
-  Tôi sẽ chọn `05af60ce8a8c3cd31682982122423ef3.apk` nó là một loại Beanbot thuộc PremiumSMS. Đạt nó trong môt folder mới tạo trọng `/home` tên là `lab`  path : `/home/erik/Documents/lab`
+  Tôi sẽ chọn `05af60ce8a8c3cd31682982122423ef3.apk` nó là một loại Beanbot thuộc PremiumSMS. Đặt nó trong môt thư mục mới tạo trọng `/home` tên là `lab`  path : `/home/erik/Documents/lab`
  
  ![](https://i.imgur.com/RIsDjb4.png)
  
- Sau đó là chạy lệnh phân tích với chế độ thực hiện tất cả các bước (nhớ là di chuyển vào trong thư mục `/AndroPyTool`):
+ - Sau đó là chạy lệnh phân tích với chế độ thực hiện tất cả các bước (nhớ là di chuyển vào trong thư mục `/AndroPyTool` và kèm theo API key):
  
   >  `$ cd AndroPyTool/`
 >  
 >   `$ python androPyTool.py -s /home/erik/Documents/lab -all -vt f25cfc1b646a0d0eb6437fa7a21db4f9cfc4ef8027c97bd3943428acc5bed2d1`
 
-Các Bước từ 1 đến  5 sẽ thực thi rất nhanh riêng bước 6 thì sẽ mất nhiều hay ít thời gian tùy thuộc vào cấu hình máy tính của bạn. 
+- Các Bước từ 1 đến  5 sẽ thực thi rất nhanh riêng bước 6 thì sẽ mất ít hay nhiều thời gian phụ thuộc vào cấu hình máy tính của bạn. 
 
-Bước 1 -> 5 
+**Bước 1 --> 5** 
 
 ![](https://i.imgur.com/lp7q9zW.png)
 
-Bước 6 : thời gian boot khá lâu nhưng không phải bị lỗi hoàn toàn đâu quá trình hiện thông báo kia là khi Emulater đã khởi chạy mà thiết bị vẫn chưa boot xong nên nó không tìm thấy.
+**Bước 6** : thời gian **boot** khá lâu nhưng không phải bị lỗi hoàn toàn đâu. Thông báo lỗi xuất hiện  là khi **[Emulator](h)** đã khởi chạy mà thiết bị vẫn chưa **boot** xong nên nó không tìm thấy.
  
  
 ![](https://i.imgur.com/j2nqtld.png)
 
-Trong khi vẫn hiển thị error nhưng filesytem vẫn được khởi tạo nghĩa là có thể thực thi chứ không "chết" hẳn. 
+- Trong khi vẫn hiển thị error nhưng **[filesytem](h)** vẫn được khởi tạo nghĩa là có thể thực thi chứ không "chết" hẳn. 
 
 
 ![](https://i.imgur.com/mlWgsD6.png)
-Đây là khi mọi thứ đã hoàn tất bước 6 và việc trích xuất kết quả ở bước 7
+- Đây là khi mọi thứ đã hoàn tất **bước 6** và việc trích xuất kết quả ở **bước 7**.
 
 ![](https://i.imgur.com/n5hkv3d.png)
 ## III. Kết quả và nghiệm thu
@@ -294,10 +293,11 @@ Trong khi vẫn hiển thị error nhưng filesytem vẫn được khởi tạo 
 /Features_files/       --> Các tính năng tệp được tạo bằng AndroPyTool
 
 ```
-Sau đây tôi sẽ show cho các bạn thấy chúng ta nhận được những gì sau khi phân tích "em" beanbot trên:
+Sau đây tôi sẽ **show** cho các bạn thấy chúng ta nhận được những gì sau khi phân tích "em" beanbot trên:
 
-Trong `/lab` của tôi lúc này là kết quả 
-Chúng ta có : 
+Trong `/lab` của tôi lúc này là kết quả thu được.
+
+
 ``` total 32
 drwxr-xr-x 2 erik erik 4096 Thg 4 29 17:02 DroidBox_outputs
 drwxr-xr-x 4 erik erik 4096 Thg 4 29 17:01 Dynamic
@@ -310,7 +310,7 @@ drwxr-xr-x 2 erik erik 4096 Thg 4 29 16:51 VT_analysis
 ```
  ![](https://i.imgur.com/kHN7m0e.png)
  - Các file dữ liệu thô đều hiển thị đầy đủ.
- Đến đây thì ta đã hoàn thành quá trình phân tích tĩnh và động sử dụng AndroPyTool
+ Đến đây thì ta đã hoàn thành quá trình phân tích tĩnh và động sử dụng AndroPyTool. Cảm ơn đã theo dõi bài viết này. Chúc các bạn sử dụng AndroPyTool hệu quả.
 
 ### Bài viết được tham khảo thông tin từ :
 - **[alexMyG/AndroPyTool](https://github.com/alexMyG/AndroPyTool)** 
