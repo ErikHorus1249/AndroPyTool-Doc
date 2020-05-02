@@ -1,5 +1,6 @@
 
 
+
 By **[Erik Horus](https://github.com/ErikHorus1249)**
 Date : 30/04/2020 
 
@@ -86,25 +87,31 @@ Sau đó tôi sẽ chạy AndroPyTool tại host này tôi cũng sẽ tạo mộ
 	- libgl1-mesa-dev 
 	 Bằng lệnh sau :
 	 
-	
+>
+    $ sudo apt-get update
 
-> `$ sudo apt-get update 
-> $ sudo apt-get install -y --no-install-recommends software-properties-common wget git lib32gcc1 lib32ncurses5 lib32stdc++6 lib32z1 libc6-i386 libgl1-mesa-dev python-pip python-dev gcc python-tk curl`
+
+>
+     $ sudo apt-get install -y --no-install-recommends software-properties-common wget git lib32gcc1 lib32ncurses5 lib32stdc++6 lib32z1 libc6-i386 libgl1-mesa-dev python-pip python-dev gcc python-tk curl
 
 - Cài đặt java 8 và python-setuptool
+>
+    $ sudo apt install openjdk-8-jdk openjdk-8-jre
 
-> `$ sudo apt install openjdk-8-jdk openjdk-8-jre`
 > 
-> `$ sudo apt-get install -y python-setuptools`
+
+    $ sudo apt-get install -y python-setuptools
 
 **1. Cài đặt Android SDK** (chuyển sang bước tiếp theo nếu bạn đã có nó) 
 Các bước sau đây dùng để cài đặt SDK Android ở chế độ không có giao diện đồ họa (non-GUI)
 -   Tải về và giải nén  Android SDK:
     
-
->    `$ cd `
->    `$ wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz`
->   `$ tar -xvf android-sdk_r24.2-linux.tgz`
+>
+`$ cd `
+>
+`$ wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz`
+>
+ `$ tar -xvf android-sdk_r24.2-linux.tgz`
 
     
 -   Thêm  Android SDK vào `~/.bashrc` 3 dòng dưới đây bằng [Vim](h) hoặc [Nano](h) . Nếu bạn sử dụng  [Zsh](https://github.com/ohmyzsh/ohmyzsh) hãy thêm 3 dòng dưới đây vào file `~/.zshrc`
@@ -113,32 +120,39 @@ Các bước sau đây dùng để cài đặt SDK Android ở chế độ khôn
     export ANDROID_HOME=$HOME/android-sdk-linux/
     export PATH=$PATH:$ANDROID_HOME/tools
     export PATH=$PATH:$ANDROID_HOME/platform-tools
-    
     ```
     
 -   Load các thư viện ở phiên hiện tại  :
     
 
->    `$ source ~/.bashrc`
+>
+   `$ source ~/.bashrc`
 
 **Cài đặt các gói của Android 16**
 
 -   Cài đặt Android 16, phiên bản được hỗ trợ bởi DroidBox (the platform and system image):
-    
-> `$ echo y | android update sdk --filter platform-tools --no-ui --force -a`
->     `$ echo y | android update sdk --filter tools --no-ui --force -a`
->     `$ echo y | android update sdk --filter android-16 --no-ui --force -a`
->     `$ echo y | android update sdk --filter sys-img-armeabi-v7a-android-16 --no-ui -a`
+>  
+ `$ echo y | android update sdk --filter platform-tools --no-ui --force -a`
+ >
+   `$ echo y | android update sdk --filter tools --no-ui --force -a`
+  >
+   `$ echo y | android update sdk --filter android-16 --no-ui --force -a`
+   >
+   `$ echo y | android update sdk --filter sys-img-armeabi-v7a-android-16 --no-ui -a`
 
 **3. Tải source code  và image từ github**
 
 -   Bây giờ chúng ta có thể tải AndroPyTool từ GitHub. 
-
->  `$ git clone --recursive https://github.com/alexMyG/AndroPyTool.git`
->      `$ wget https://github.com/pjlantz/droidbox/releases/download/v4.1.1/DroidBox411RC.tar.gz`
->      `$ tar -zxvf DroidBox411RC.tar.gz`
->      `$ cp -r DroidBox_4.1.1/images AndroPyTool/DroidBox_AndroPyTool/images`
->      `$ touch AndroPyTool/avclass/__init__.py`
+>
+`$ git clone --recursive https://github.com/alexMyG/AndroPyTool.git`
+>
+`$ wget https://github.com/pjlantz/droidbox/releases/download/v4.1.1/DroidBox411RC.tar.gz`
+>
+`$ tar -zxvf DroidBox411RC.tar.gz`
+>
+ `$ cp -r DroidBox_4.1.1/images AndroPyTool/DroidBox_AndroPyTool/images`
+ >
+`$ touch AndroPyTool/avclass/__init__.py`
 
 - Nếu bạn cài đặt như bước trên thì sẽ xảy ra lỗi ở system image và RAM image chúng không thực sự hoạt động tốt ngay cả khi bạn cài đặt bằng Docker cũng sẽ gặp vấn đề tương tự. Cụ thể lỗi này sẽ phát sinh ở Bước thứ 6 : khi bạn sử dụng Droidbox 
 
@@ -163,32 +177,36 @@ Như vậy là xong phần Droidbox.
 **3. Chuẩn bị Droidbox**
 
 -   Chúng ta sẽ cấp quyền cần thiết cho scripts bằng lệnh **[chmod](h)** 
-    
->  `$ chmod 744 AndroPyTool/DroidBox_AndroPyTool/*.sh`
-
+>
+`$ chmod 744 AndroPyTool/DroidBox_AndroPyTool/*.sh`
+>
     
 -   Tạo thiết bị  Android bằng lệnh sau : "no" là sẽ mặc định là không thay đổi thông số nào khi khởi tạo thiết bị. 
     
-   >  `$ echo "no" | AndroPyTool/DroidBox_AndroPyTool/createDroidBoxDevice.sh`
+   >  
+   `$ echo "no" | AndroPyTool/DroidBox_AndroPyTool/createDroidBoxDevice.sh`
 
 **4. Cài đặt các thư viện Python cần thiết**
 
 -   Bạn có thể tùy chọn chạy môi trưởng ảo `virtualenv` hay không đối với máy cấu hình thấp thì không nên vì bước này không thiết yếu lắm, bạn  sử dụng câu lệnh sau để cài đặt :
     
->  `$ sudo pip install virtualenv`
+>  
+`$ sudo pip install virtualenv`
 
 - Tạo môi trường ảo và kích hoạt :
    
->    `$ virtualenv droidbox_env`
+>    
+`$ virtualenv droidbox_env`
 >     
->    `$ source droidbox_env/bin/activate`
+`$ source droidbox_env/bin/activate`
 
  - **Cài đặt Wheel**
 
->  `$ pip install wheel`
+`$ pip install wheel`
 
 -   **Các thư viện Python cần thiết** đã được liệt kê trong file `requirements.txt`:
-    >  `$ pip install -r AndroPyTool/requirements.txt`
+>
+   `$ pip install -r AndroPyTool/requirements.txt`
     
  
  ![](https://i.imgur.com/j6SKgKg.png)
@@ -197,10 +215,10 @@ Như vậy là xong phần Droidbox.
 
 -   Nếu các bước cài đặt đều ổn thì bắt đầu chạy phân tích thôi :
 - Di chuyển đến thư mục `/AndroPyTool`
-   
->  `$ cd AndroPyTool/`
+>
+`$ cd AndroPyTool/`
 >  
->   `$ python androPyTool.py -s </PATH/TO/FOLDER/WITH/APKS/>`
+`$ python androPyTool.py -s </PATH/TO/FOLDER/WITH/APKS/>`
 
 #### Các tính năng được cung cấp bởi AndroPyTool
 
@@ -251,10 +269,11 @@ Nếu bạn thấy Dataset trên chưa thỏa màn nhu cầu phân tích của b
  ![](https://i.imgur.com/RIsDjb4.png)
  
  - Sau đó là chạy lệnh phân tích với chế độ thực hiện tất cả các bước (nhớ là di chuyển vào trong thư mục `/AndroPyTool` và kèm theo API key):
- 
-  >  `$ cd AndroPyTool/`
+ >
+  `$ cd AndroPyTool/`
 >  
->   `$ python androPyTool.py -s /home/erik/Documents/lab -all -vt f25cfc1b646a0d0eb6437fa7a21db4f9cfc4ef8027c97bd3943428acc5bed2d1`
+
+    $ python androPyTool.py -s /home/erik/Documents/lab -all -vt f25cfc1b646a0d0eb6437fa7a21db4f9cfc4ef8027c97bd3943428acc5bed2d1
 
 - Các Bước từ 1 đến  5 sẽ thực thi rất nhanh riêng bước 6 thì sẽ mất ít hay nhiều thời gian phụ thuộc vào cấu hình máy tính của bạn. 
 
