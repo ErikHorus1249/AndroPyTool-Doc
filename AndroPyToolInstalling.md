@@ -1,6 +1,7 @@
 
 
 
+
 By **[Erik Horus](https://github.com/ErikHorus1249)**
 Date : 30/04/2020 
 
@@ -121,9 +122,17 @@ Các bước sau đây dùng để cài đặt SDK Android ở chế độ khôn
     export PATH=$PATH:$ANDROID_HOME/tools
     export PATH=$PATH:$ANDROID_HOME/platform-tools
     ```
-    
+ví dụ sử dụng nano : 
+
 -   Load các thư viện ở phiên hiện tại  :
-    
+>
+
+    nano ~/.bashrc
+
+![](https://i.imgur.com/R1u80yF.png)
+- sau khi copy `Ctrl + X` và `Y` để lưu
+
+![](https://i.imgur.com/N4lbshJ.png)
 
 >
    `$ source ~/.bashrc`
