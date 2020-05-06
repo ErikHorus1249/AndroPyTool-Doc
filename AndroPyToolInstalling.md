@@ -274,7 +274,8 @@ Nếu bạn thấy Dataset trên chưa thỏa màn nhu cầu phân tích của b
 - **Bước 3 : Phân tích**
 
   Tôi sẽ chọn `05af60ce8a8c3cd31682982122423ef3.apk` nó là một loại Beanbot thuộc PremiumSMS. Đặt nó trong môt thư mục mới tạo trọng `/home` tên là `lab`  path : `/home/erik/Documents/lab`
- 
+- Sử dụng lệnh `pwd` ( print work directory ) để biết chính xác đường dẫn (**path**) nơi đặt ứng dụng cần phân tích  
+ ![](https://i.imgur.com/qchxOPM.png)
  ![](https://i.imgur.com/RIsDjb4.png)
  
  - Sau đó là chạy lệnh phân tích với chế độ thực hiện tất cả các bước (nhớ là di chuyển vào trong thư mục `/AndroPyTool` và kèm theo API key):
