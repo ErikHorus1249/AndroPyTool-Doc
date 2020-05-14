@@ -2,6 +2,7 @@
 
 
 
+
 By **[Erik Horus](https://github.com/ErikHorus1249)**
 Date : 30/04/2020 
 
@@ -23,6 +24,9 @@ Mô hình hoạt động của công cụ này :
 Có hai cách để cài đặt công cụ AndroPyTool :  
 - Cách 1: Sử dụng **Docker**
 - Cách 2: Cài bằng mã nguồn trên **Ubuntu** (source code) 
+
+Với bạn nào chưa chạy được trên máy ảo thì hãy download máy ảo Ubuntu 18.04 đã cài đặt sẵn AndroPyTool để sử dụng. password login : **dang1210** 
+link tải [**tại đây**](https://drive.google.com/file/d/1Ps0237UBRNIBO74hXaKvmxAsa59zrqff/view)
 
 #### A. Cài đặt sử dụng docker 
 Khi sử dụng Docker thì chúng ta chỉ cần thực hiện các bước đó là cài đặt Docker ,  **Pull image** và **Run Container**  là đã xong bước cài đặt .
@@ -345,7 +349,8 @@ drwxr-xr-x 2 erik erik 4096 Thg 4 29 16:51 VT_analysis
 
 ### Bài viết được tham khảo thông tin từ :
 - **[alexMyG/AndroPyTool](https://github.com/alexMyG/AndroPyTool)** 
--  thầy **[Phạm Hoàng Duy](https://github.com/alexMyG/AndroPyTool/issues/19)**
+-  thầy [**Phạm Hoàng Duy**](https://github.com/alexMyG/AndroPyTool/issues/19)
+- máy ảo [**Hải Đăng**](https://www.facebook.com/ndh.nth0111)
 - **[Virustotal](https://www.virustotal.com/)**
 - **[Researchgate](https://www.researchgate.net/figure/AndroPytool-architecture_fig1_326717726)**
 - **[University of New Brunswick](https://www.unb.ca/cic/datasets/invesandmal2019.html)** 
