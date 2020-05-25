@@ -3,6 +3,7 @@
 
 
 
+
 By **[Erik Horus](https://github.com/ErikHorus1249)**
 Date : 30/04/2020 
 
@@ -25,8 +26,8 @@ Có hai cách để cài đặt công cụ AndroPyTool :
 - Cách 1: Sử dụng **Docker**
 - Cách 2: Cài bằng mã nguồn trên **Ubuntu** (source code) 
 
-Với bạn nào chưa chạy được trên máy ảo thì hãy download máy ảo Ubuntu 18.04 đã cài đặt sẵn AndroPyTool để sử dụng. password login : **dang1210** 
-link tải [**tại đây**](https://drive.google.com/file/d/1Ps0237UBRNIBO74hXaKvmxAsa59zrqff/view)
+**Với bạn nào chưa chạy được máy ảo thì có thể download máy ảo Ubuntu 18.04 đã cài đặt sẵn AndroPyTool và tool trích xuất dữ liệu. Giải nén trước khi dùng và Password login là** `dang1210`
+link tải [**tại đây**](https://drive.google.com/file/d/1QxcsB-dSp2hXkysKhFlbMXXvLkFdCSc7/view?usp=sharing)
 
 #### A. Cài đặt sử dụng docker 
 Khi sử dụng Docker thì chúng ta chỉ cần thực hiện các bước đó là cài đặt Docker ,  **Pull image** và **Run Container**  là đã xong bước cài đặt .
