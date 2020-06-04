@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Android应用权限收集列表(不完全收集) -->
+<permissions>
+	<permission>
+		<name>
+			android.permission.ACCESS_CHECKIN_PROPERTIES
+		</name>
+		<zhExplain>
+			允许读写访问”properties”表在checkin数据库中，改值可以修改上传</zhExplain>
+		<enExplain>( Allows read/write access to the “properties” table in the
+			checkin database, to change values that
+			get uploaded)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_COARSE_LOCATION
+		</name>
+		<zhExplain>
+			允许一个程序访问CellID或WiFi热点来获取粗略的位置</zhExplain>
+		<enExplain>(Allows an application to access coarse (e.g., Cell-ID,
+			WiFi) location)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_FINE_LOCATION
+		</name>
+		<zhExplain>
+			允许一个程序访问精良位置(如GPS)</zhExplain>
+		<enExplain> (Allows an application to access fine (e.g., GPS)
+			location)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+		</name>
+		<zhExplain>
+			允许应用程序访问额外的位置提供命令</zhExplain>
+		<enExplain>(Allows an application to access extra location
+			provider
+			commands)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_MOCK_LOCATION
+		</name>
+		<zhExplain>
+			允许程序创建模拟位置提供用于测试</zhExplain>
+		<enExplain>(Allows an application to create mock location
+			providers for
+			testing)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_NETWORK_STATE
+		</name>
+		<zhExplain>
+			允许程序访问有关GSM网络信息</zhExplain>
+		<enExplain>(Allows applications to access information about
+			networks)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_SURFACE_FLINGER
+		</name>
+		<zhExplain>
+			允许程序使用SurfaceFlinger底层特性</zhExplain>
+		<enExplain>(Allows an application to use
+			SurfaceFlinger’s low level
+			features)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ACCESS_WIFI_STATE
+</name>
+		<zhExplain>
+			允许程序访问Wi-Fi网络状态信息</zhExplain>
+		<enExplain>(Allows applications to access information about
+			Wi-Fi
+			networks)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.ADD_SYSTEM_SERVICE
+</name>
+		<zhExplain>
+			允许程序发布系统级服务</zhExplain>
+		<enExplain>(Allows an application to publish system-level services).
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BATTERY_STATS
+</name>
+		<zhExplain>
+			允许程序更新手机电池统计信息</zhExplain>
+		<enExplain>(Allows an application to update the collected battery
+			statistics)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BLUETOOTH
+</name>
+		<zhExplain>
+			允许程序连接到已配对的蓝牙设备</zhExplain>
+		<enExplain>(Allows applications to connect to paired bluetooth
+			devices)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BLUETOOTH_ADMIN
+</name>
+		<zhExplain>
+			允许程序发现和配对蓝牙设备</zhExplain>
+		<enExplain>(Allows applications to discover and pair bluetooth
+			devices)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BRICK
+</name>
+		<zhExplain>
+			请求能够禁用设备(非常危险)</zhExplain>
+		<enExplain>(Required to be able to disable the device (very
+			*erous!).)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BROADCAST_PACKAGE_REMOVED
+</name>
+		<zhExplain>
+			允许程序广播一个提示消息在一个应用程序包已经移除后</zhExplain>
+		<enExplain>(Allows an application to broadcast a
+			notification that an
+			application package has been removed)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.BROADCAST_STICKY
+</name>
+		<zhExplain>
+			允许一个程序广播常用intents</zhExplain>
+		<enExplain>(Allows an application to broadcast sticky intents)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CALL_PHONE
+</name>
+		<zhExplain>
+			允许一个程序初始化一个电话拨号不需通过拨号用户界面需要用户确认</zhExplain>
+		<enExplain>(Allows an application to initiate a
+			phone call without
+			going through the Dialer user interface for the
+			user to confirm the
+			call being placed.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CALL_PRIVILEGED
+</name>
+		<zhExplain>
+			允许一个程序拨打任何号码，包含紧急号码无需通过拨号用户界面需要用户确认</zhExplain>
+		<enExplain>(Allows an application to call any
+			phone number, including
+			emergency numbers, without going through the
+			Dialer user interface for
+			the user to confirm the call being placed)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CAMERA
+</name>
+		<zhExplain>
+			请求访问使用照相设备</zhExplain>
+		<enExplain>(Required to be able to access the camera device. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CHANGE_COMPONENT_ENABLED_STATE
+</name>
+		<zhExplain>
+			允许一个程序是否改变一个组件或其他的启用或禁用</zhExplain>
+		<enExplain>(Allows an application to change whether an
+			application
+			component (other than its own) is enabled or not. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CHANGE_CONFIGURATION
+</name>
+		<zhExplain>
+			允许一个程序修改当前设置，如本地化</zhExplain>
+		<enExplain>(Allows an application to modify the current
+			configuration,
+			such as locale. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CHANGE_NETWORK_STATE
+</name>
+		<zhExplain>
+			允许程序改变网络连接状态</zhExplain>
+		<enExplain>(Allows applications to change network connectivity
+			state)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CHANGE_WIFI_STATE
+</name>
+		<zhExplain>
+			允许程序改变Wi-Fi连接状态</zhExplain>
+		<enExplain>(Allows applications to change Wi-Fi connectivity
+			state)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CLEAR_APP_CACHE
+</name>
+		<zhExplain>
+			允许一个程序清楚缓存从所有安装的程序在设备中</zhExplain>
+		<enExplain>(Allows an application to clear the caches of
+			all installed
+			applications on the device. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CLEAR_APP_USER_DATA
+</name>
+		<zhExplain>
+			允许一个程序清除用户设置</zhExplain>
+		<enExplain>(Allows an application to clear user data)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.CONTROL_LOCATION_UPDATES
+</name>
+		<zhExplain>
+			允许启用禁止位置更新提示从无线模块</zhExplain>
+		<enExplain>(Allows enabling/disabling location update
+			notifications
+			from the radio. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DELETE_CACHE_FILES
+</name>
+		<zhExplain>
+			允许程序删除缓存文件</zhExplain>
+		<enExplain>(Allows an application to delete cache files)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DELETE_PACKAGES
+</name>
+		<zhExplain>
+			允许一个程序删除包</zhExplain>
+		<enExplain>(Allows an application to delete packages)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DEVICE_POWER
+</name>
+		<zhExplain>
+			允许访问底层电源管理</zhExplain>
+		<enExplain>(Allows low-level access to power management)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DIAGNOSTIC
+</name>
+		<zhExplain>
+			允许程序RW诊断资源</zhExplain>
+		<enExplain>(Allows applications to RW to diagnostic resources. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DISABLE_KEYGUARD
+</name>
+		<zhExplain>
+			允许程序禁用键盘锁</zhExplain>
+		<enExplain>(Allows applications to disable the keyguard )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.DUMP
+</name>
+		<zhExplain>
+			允许程序返回状态抓取信息从系统服务</zhExplain>
+		<enExplain>(Allows an application to retrieve state dump
+			information
+			from system services.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.EXPAND_STATUS_BAR
+</name>
+		<zhExplain>
+			允许一个程序扩展收缩在状态栏,android开发网提示应该是一个类似windows mobile中的托盘程序
+		</zhExplain>
+		<enExplain>(Allows an
+			application to expand or collapse the status bar.
+			)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.FACTORY_TEST
+</name>
+		<zhExplain>
+			作为一个工厂测试程序，运行在root用户</zhExplain>
+		<enExplain>(Run as a manufacturer test application, running
+			as the root
+			user. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.FLASHLIGHT
+</name>
+		<zhExplain>
+			访问闪光灯,android开发网提示htc Dream不包含闪光灯</zhExplain>
+		<enExplain>(Allows access to the flashlight )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.FORCE_BACK
+</name>
+		<zhExplain>
+			允许程序强行一个后退操作是否在顶层activities</zhExplain>
+		<enExplain>(Allows an application to force a BACK
+			operation on whatever
+			is the top activity. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.FOTA_UPDATE
+</name>
+		<zhExplain>
+			暂时不了解这是做什么使用的，android开发网分析可能是一个预留权限.</zhExplain>
+		<enExplain>
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.GET_ACCOUNTS
+</name>
+		<zhExplain>
+			访问一个帐户列表在Accounts Service中</zhExplain>
+		<enExplain>(Allows access to the list of accounts in
+			the Accounts
+			Service)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.GET_PACKAGE_SIZE
+</name>
+		<zhExplain>
+			允许一个程序获取任何package占用空间容量</zhExplain>
+		<enExplain>(Allows an application to find out the space
+			used by any
+			package. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.GET_TASKS
+</name>
+		<zhExplain>
+			允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等</zhExplain>
+		<enExplain>(Allows an application to get
+			information about the
+			currently or recently running tasks: a
+			thumbnail representation of the
+			tasks, what activities are running in
+			it, etc.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.HARDWARE_TEST
+</name>
+		<zhExplain>
+			允许访问硬件</zhExplain>
+		<enExplain>(Allows access to hardware peripherals. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+
+			android.permission.INSTALL_PACKAGES
+</name>
+		<zhExplain>
+			允许一个程序安装packages</zhExplain>
+		<enExplain>(Allows an application to install packages. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.INTERNAL_SYSTEM_WINDOW
+</name>
+		<zhExplain>
+			允许打开窗口使用系统用户界面</zhExplain>
+		<enExplain>(Allows an application to open windows that are for use
+			by
+			parts of the system user interface. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.INTERNET
+</name>
+		<zhExplain>
+			允许程序打开网络套接字</zhExplain>
+		<enExplain>(Allows applications to open network sockets)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.MANAGE_APP_TOKENS
+</name>
+		<zhExplain>
+			允许程序管理(创建、催后、 z- order默认向z轴推移)程序引用在窗口管理器中</zhExplain>
+		<enExplain>(Allows an application to
+			manage (create, destroy, Z-order)
+			application tokens in the window
+			manager. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.MASTER_CLEAR</name>
+		<zhExplain>
+			目前还没有明确的解释，android开发网分析可能是清除一切数据，类似硬格机</zhExplain>
+		<enExplain>
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.MODIFY_AUDIO_SETTINGS
+</name>
+		<zhExplain>
+			允许程序修改全局音频设置</zhExplain>
+		<enExplain>(Allows an application to modify global audio settings)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.MODIFY_PHONE_STATE
+</name>
+		<zhExplain>
+			允许修改话机状态，如电源，人机接口等</zhExplain>
+		<enExplain>(Allows modification of the telephony state – power
+			on, mmi,
+			etc. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+</name>
+		<zhExplain>
+			允许挂载和反挂载文件系统可移动存储</zhExplain>
+		<enExplain>(Allows mounting and unmounting file systems for
+			removable
+			storage. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.PERSISTENT_ACTIVITY
+</name>
+		<zhExplain>
+			允许一个程序设置他的activities显示</zhExplain>
+		<enExplain>(Allow an application to make its activities
+			persistent. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.PROCESS_OUTGOING_CALLS
+</name>
+		<zhExplain>
+			允许程序监视、修改有关播出电话</zhExplain>
+		<enExplain>(Allows an application to monitor, modify, or abort
+			outgoing calls)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_CALENDAR
+</name>
+		<zhExplain>
+			允许程序读取用户日历数据</zhExplain>
+		<enExplain>(Allows an application to read the user’s calendar data.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_CONTACTS
+</name>
+		<zhExplain>
+			允许程序读取用户联系人数据</zhExplain>
+		<enExplain>(Allows an application to read the user’s contacts
+			data.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_FRAME_BUFFER
+</name>
+		<zhExplain>
+			允许程序屏幕波或和更多常规的访问帧缓冲数据</zhExplain>
+		<enExplain>(Allows an application to take screen shots and
+			more
+			generally get access to the frame buffer data)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_INPUT_STATE
+</name>
+		<zhExplain>
+			允许程序返回当前按键状态</zhExplain>
+		<enExplain>(Allows an application to retrieve the current state of
+			keys and switches. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_LOGS
+</name>
+		<zhExplain>
+			允许程序读取底层系统日志文件</zhExplain>
+		<enExplain>(Allows an application to read the low-level system log
+			files. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_OWNER_DATA
+</name>
+		<zhExplain>
+			允许程序读取所有者数据</zhExplain>
+		<enExplain>(Allows an application to read the owner’s data)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_SMS
+</name>
+		<zhExplain>
+			允许程序读取短信息</zhExplain>
+		<enExplain>(Allows an application to read SMS messages.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_SYNC_SETTINGS
+</name>
+		<zhExplain>
+			允许程序读取同步设置</zhExplain>
+		<enExplain>(Allows applications to read the sync settings)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.READ_SYNC_STATS
+</name>
+		<zhExplain>
+			允许程序读取同步状态</zhExplain>
+		<enExplain>(Allows applications to read the sync stats)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.REBOOT
+</name>
+		<zhExplain>
+			请求能够重新启动设备</zhExplain>
+		<enExplain>(Required to be able to reboot the device. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RECEIVE_BOOT_COMPLETED
+</name>
+		<zhExplain>
+			允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动</zhExplain>
+		<enExplain>(Allows an application to
+			receive the ACTION_BOOT_COMPLETED
+			that is broadcast after the system
+			finishes booting. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RECEIVE_MMS
+</name>
+		<zhExplain>
+			允许一个程序监控将收到MMS彩信,记录或处理</zhExplain>
+		<enExplain>(Allows an application to monitor incoming MMS
+			messages, to
+			record or perform processing on them. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RECEIVE_SMS
+</name>
+		<zhExplain>
+			允许程序监控一个将收到短信息，记录或处理</zhExplain>
+		<enExplain>(Allows an application to monitor incoming SMS
+			messages, to
+			record or perform processing on them.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RECEIVE_WAP_PUSH
+</name>
+		<zhExplain>
+			允许程序监控将收到WAP PUSH信息</zhExplain>
+		<enExplain>(Allows an application to monitor incoming WAP
+			push
+			messages. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RECORD_AUDIO
+</name>
+		<zhExplain>
+			允许程序录制音频</zhExplain>
+		<enExplain>(Allows an application to record audio)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.REORDER_TASKS
+</name>
+		<zhExplain>
+			允许程序改变Z轴排列任务</zhExplain>
+		<enExplain>(Allows an application to change the Z-order of tasks)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.RESTART_PACKAGES
+</name>
+		<zhExplain>
+			允许程序重新启动其他程序</zhExplain>
+		<enExplain>(Allows an application to restart other applications)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SEND_SMS
+</name>
+		<zhExplain>
+			允许程序发送SMS短信</zhExplain>
+		<enExplain>(Allows an application to send SMS messages)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_ACTIVITY_WATCHER
+</name>
+		<zhExplain>
+			允许程序监控或控制activities已经启动全局系统中</zhExplain>
+		<enExplain>Allows an application to watch and
+			control how activities
+			are started globally in the system.
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_ALWAYS_FINISH
+</name>
+		<zhExplain>
+			允许程序控制是否活动间接完成在处于后台时</zhExplain>
+		<enExplain>Allows an application to control whether
+			activities are
+			immediately finished when put in the background.
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_ANIMATION_SCALE
+</name>
+		<zhExplain>
+			修改全局信息比例</zhExplain>
+		<enExplain>(Modify the global animation scaling factor.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_DEBUG_APP
+</name>
+		<zhExplain>
+			配置一个程序用于调试</zhExplain>
+		<enExplain>(Configure an application for debugging.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_ORIENTATION
+</name>
+		<zhExplain>
+			允许底层访问设置屏幕方向和实际旋转</zhExplain>
+		<enExplain>(Allows low-level access to setting the orientation
+			(actually rotation) of the screen.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_PREFERRED_APPLICATIONS
+</name>
+		<zhExplain>
+			允许一个程序修改列表参数PackageManager.addPackageToPreferred()
+			和PackageManager.removePackageFromPreferred()方法</zhExplain>
+		<enExplain>(Allows an application
+			to modify the list of preferred
+			applications with the
+			PackageManager.addPackageToPreferred() and
+			PackageManager.removePackageFromPreferred() methods.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_PROCESS_FOREGROUND
+</name>
+		<zhExplain>
+			允许程序当前运行程序强行到前台</zhExplain>
+		<enExplain>(Allows an application to force any currently running
+			process to be in the foreground.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_PROCESS_LIMIT
+</name>
+		<zhExplain>
+			允许设置最大的运行进程数量</zhExplain>
+		<enExplain>(Allows an application to set the maximum number of (not
+			needed) application processes that can be running. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_TIME_ZONE
+</name>
+		<zhExplain>
+			允许程序设置时间区域</zhExplain>
+		<enExplain>(Allows applications to set the system time zone)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_WALLPAPER
+</name>
+		<zhExplain>
+			允许程序设置壁纸</zhExplain>
+		<enExplain>(Allows applications to set the wallpaper )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SET_WALLPAPER_HINTS
+</name>
+		<zhExplain>
+			允许程序设置壁纸hits</zhExplain>
+		<enExplain>(Allows applications to set the wallpaper hints)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SIGNAL_PERSISTENT_PROCESSES
+</name>
+		<zhExplain>
+			允许程序请求发送信号到所有显示的进程中</zhExplain>
+		<enExplain>(Allow an application to request that a signal be
+			sent to
+			all persistent processes)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.STATUS_BAR
+</name>
+		<zhExplain>
+			允许程序打开、关闭或禁用状态栏及图标</zhExplain>
+		<enExplain>Allows an application to open, close, or disable
+			the status
+			bar and its icons.
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SUBSCRIBED_FEEDS_READ
+</name>
+		<zhExplain>
+			允许一个程序访问订阅RSS Feed内容提供</zhExplain>
+		<enExplain>(Allows an application to allow access the
+			subscribed feeds
+			ContentProvider. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SUBSCRIBED_FEEDS_WRITE
+</name>
+		<zhExplain>
+			系统暂时保留改设置,android开发网认为未来版本会加入该功能。</zhExplain>
+		<enExplain>
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.SYSTEM_ALERT_WINDOW
+</name>
+		<zhExplain>
+			允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层</zhExplain>
+		<enExplain>(Allows an application to
+			open windows using the type
+			TYPE_SYSTEM_ALERT, shown on top of all
+			other applications. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.VIBRATE
+</name>
+		<zhExplain>
+			允许访问振动设备</zhExplain>
+		<enExplain>(Allows access to the vibrator)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WAKE_LOCK
+</name>
+		<zhExplain>
+			允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失</zhExplain>
+		<enExplain>( Allows using PowerManager
+			WakeLocks to keep processor from
+			sleeping or screen from dimming)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_APN_SETTINGS
+</name>
+		<zhExplain>
+			允许程序写入API设置</zhExplain>
+		<enExplain>(Allows applications to write the apn settings)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_CALENDAR
+</name>
+		<zhExplain>
+			允许一个程序写入但不读取用户日历数据</zhExplain>
+		<enExplain>(Allows an application to write (but not read) the
+			user’s
+			calendar data. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_CONTACTS
+</name>
+		<zhExplain>
+			允许程序写入但不读取用户联系人数据</zhExplain>
+		<enExplain>(Allows an application to write (but not read) the
+			user’s
+			contacts data. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_GSERVICES
+</name>
+		<zhExplain>
+			允许程序修改Google服务地图</zhExplain>
+		<enExplain>(Allows an application to modify the Google service
+			map. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_OWNER_DATA
+</name>
+		<zhExplain>
+			允许一个程序写入但不读取所有者数据</zhExplain>
+		<enExplain>(Allows an application to write (but not read) the
+			owner’s
+			data.)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_SETTINGS
+		</name>
+		<zhExplain>
+			允许程序读取或写入系统设置</zhExplain>
+		<enExplain>(Allows an application to read or write the system
+			settings. )
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_SMS
+		</name>
+		<zhExplain>
+			允许程序写短信</zhExplain>
+		<enExplain>(Allows an application to write SMS messages)
+		</enExplain>
+	</permission>
+	<permission>
+		<name>
+			android.permission.WRITE_SYNC_SETTINGS
+		</name>
+		<zhExplain>
+			允许程序写入同步设置</zhExplain>
+		<enExplain>(Allows applications to write the sync settings)
+		</enExplain>
+	</permission>
+</permissions>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="text1" />
+    <item type="id" name="linear_foot" />
+    <item type="id" name="lin_install" />
+    <item type="id" name="lin_appoint" />
+    <item type="id" name="lin_trust" />
+    <item type="id" name="lin_more" />
+    <item type="id" name="activityInfo_img" />
+    <item type="id" name="activityInfo_name" />
+    <item type="id" name="activityInfo_packageName" />
+    <item type="id" name="cb_cancel_trust" />
+    <item type="id" name="lin_bottom" />
+    <item type="id" name="lin_botton_btn" />
+    <item type="id" name="bt_content_top" />
+    <item type="id" name="lv_content" />
+</resources>

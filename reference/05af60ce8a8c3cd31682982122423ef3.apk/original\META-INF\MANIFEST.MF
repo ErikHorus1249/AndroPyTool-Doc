@@ -1,0 +1,90 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/layout/list_content.xml
+SHA1-Digest: 26Bg8inf7iFp6O9q4PgFF7fLOOY=
+
+Name: res/drawable-mdpi/tab_install_app_sel.png
+SHA1-Digest: BncAzKp/OqOC3X3tSh09iM+tLts=
+
+Name: assets/permission.xml
+SHA1-Digest: RhrX6ljIHX3kCUD1+lbdqZUJJsU=
+
+Name: resources.arsc
+SHA1-Digest: I2MWUrVB0vHiHV9ElLvp1k//+28=
+
+Name: res/drawable-mdpi/tab_scan_result_sel.png
+SHA1-Digest: XtmfXyuDnwK3QrCEmzEicwhP8DQ=
+
+Name: res/drawable-mdpi/tab_trust_app_sel.png
+SHA1-Digest: ZDvQigTgvwDFaE09ANx4QKGuC7I=
+
+Name: res/layout/foot.xml
+SHA1-Digest: 0BIr9+GBPT4/3kKDKrg9AaPJ7gk=
+
+Name: res/drawable-mdpi/img_result.png
+SHA1-Digest: vAvVp+CKbC/c/TlAVruniEKQgSQ=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: i7vxaosoiS+9HzKB7ZgIsXMYRLY=
+
+Name: AndroidManifest.xml
+SHA1-Digest: d0/4hE0xalbWpK5YMgeV2IWtKDI=
+
+Name: res/layout/list_content_main.xml
+SHA1-Digest: vBomeAVFNYaod2At57WLMQwmaF0=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: 7Ft/Rirt+l/JRX2KjDREScdbCZk=
+
+Name: res/drawable-mdpi/tab_scan_result_nor.png
+SHA1-Digest: LjMbkJ9n1lqOw9ApZ+tSxVnRXAw=
+
+Name: res/drawable-mdpi/btn_handle_nor.png
+SHA1-Digest: basZNa/on2LxyY73Ja2JQS3jHV4=
+
+Name: res/layout/file_row.xml
+SHA1-Digest: 2qXpJnIJM4bplZ0wcAfUvUnYgt0=
+
+Name: res/drawable-mdpi/btn_nor.png
+SHA1-Digest: 4EsofYCYb2OIdB7ClhRVR2q89aM=
+
+Name: res/drawable/btn_selector.xml
+SHA1-Digest: +z6UvtTzBX3BggFFOyJOGHHxkiQ=
+
+Name: res/drawable/btn_handle_selector.xml
+SHA1-Digest: 1aTy4Fjev6P1aGVvm+lUMJFQQrw=
+
+Name: res/drawable-mdpi/logo.png
+SHA1-Digest: M882xY/heLrV6UWDw/hxhoA3z2k=
+
+Name: classes.dex
+SHA1-Digest: fzOWT5KxMGqjDRq8IxXC7eK8M8A=
+
+Name: res/layout/main.xml
+SHA1-Digest: KazgH7qn/Ssu3vAGDMisHyFgy5M=
+
+Name: res/drawable-mdpi/tab_install_app_nor.png
+SHA1-Digest: u3UEsGZ81K/YTATgX2MOAw+zqOk=
+
+Name: res/drawable-mdpi/btn_sel.png
+SHA1-Digest: kADjayKVTNGRJ0ADftBmdT27dcU=
+
+Name: res/drawable-mdpi/tab_assign_app_nor.png
+SHA1-Digest: 4Ckr7tD4Ka735S9p3QeUirsz5Iw=
+
+Name: res/drawable-mdpi/btn_handle_sel.png
+SHA1-Digest: 7nsALpNxfyPx09yDNn+xcGibwE0=
+
+Name: res/drawable-mdpi/tab_trust_app_nor.png
+SHA1-Digest: YnFUFeA0obhSmWwnjmgZExlSLiY=
+
+Name: res/drawable-mdpi/alert_dialog_icon.png
+SHA1-Digest: cAR6AyNxhSULWXZzFKYObPjRwB0=
+
+Name: res/drawable-mdpi/tab_assign_app_sel.png
+SHA1-Digest: Xi/Jjt3IzLvALmKKo5kdOYv8XOM=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: Vj/qhxk8ic8FE0/kT6E3vgRJ4mE=
+

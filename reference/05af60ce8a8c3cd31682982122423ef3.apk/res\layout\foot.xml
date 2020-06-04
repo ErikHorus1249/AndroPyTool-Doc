@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linear_foot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/lin_install" android:background="@drawable/tab_install_app_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:text="@string/s_install" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/lin_appoint" android:background="@drawable/tab_assign_app_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:text="@string/s_appoint" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/lin_trust" android:background="@drawable/tab_trust_app_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:text="@string/s_trust" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/lin_more" android:background="@drawable/tab_scan_result_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:text="@string/s_more" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">权限管理工具</string>
+    <string name="username">用户名:</string>
+    <string name="password">密 码:</string>
+    <string name="login">确 定</string>
+    <string name="reset">重 置</string>
+    <string name="blogname">博客名字:</string>
+    <string name="blogweb">博客地址:</string>
+    <string name="s_install">已安装</string>
+    <string name="s_appoint">指定扫描</string>
+    <string name="s_trust">信任</string>
+    <string name="s_more">扫描结果</string>
+    <string name="post">发送</string>
+    <string name="ok">确认</string>
+    <string name="cancel">返回</string>
+    <string name="tag">标签</string>
+    <string name="warn">标签之间用英文逗号隔开</string>
+    <string name="blogtype">博客类型</string>
+    <string name="load">正在加载数据</string>
+    <string name="s_about"> \9背景:目前中国1000万Android手机用户常接触到的应用程序(APP)中有百分之30到40被人动了手脚， 篡改后植入了恶意吸费代码，你很可能觉得他在信口开河或是不良安全厂商的枪手在故意恐吓你。很遗憾，这是真实的，并且有进一步蔓延的趋势。\10\9 目前市面上的扣费程序90%是通过短信扣费和网络扣费，那么该程序可以轻松扫描出你所安装的程序是否有这2个权限是否具有扣费权限，并把它抓出来。另外还可以扫描指定未安装APK格式的文件是否具有扣费权限。\10\9 例如:一款单机游戏，扫描出有发短信的权限，那么它的权限是否诡异？还例如一款单机软件，有连接网络的权限，那么它的权限是否也诡异？\10\9 声明:具有扣费权限的程序并不是一定扣费。扫描过程中可能会扫描出系统自带的本没有扣费功能的程序，经过用户确认可以添加到信任列表。\10\9 </string>
+    <string name="s_help"> \9已安装:显示该用户手机已经安装的所有程序，包括系统自带程序。点击[扫描已安装程序]则对所有程序进行扫描，扫描程序权限，抓出有网络权限和短信权限的程序供用户参考。\10\9 指定扫描:浏览到用户手机上的指定APK格式的程序，对其进行扫描。\10\9 信任:维护用户信任程序，当设置为信任后，则扫描时不扫描它。\10\9 扫描结果:扫描已安装程序最后得到的结果。结果分为2类：拥有短信权限的警告程序和拥有网络权限的警告程序。\10\9 </string>
+    <string name="s_title_permission">程序重要权限信息</string>
+    <string name="s_title_prompt">提示信息</string>
+    <string name="s_title_warn">警告信息</string>
+    <string name="s_info_prompt">所有已安装程序处于[安全]级别</string>
+    <string name="s_info_warn">共有%d程序拥有监控和自动发短信的功能，请关注</string>
+</resources>
